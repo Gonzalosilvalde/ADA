@@ -1,5 +1,4 @@
-# ADA
-🌟 Ada Adventures 🌟 
+👋 Hello World in Ada!
 
 
-Welcome! Here I'll be uploading my Ada code as I dive into this awesome, structured language. 🖥️✨ Follow along to see my experiments, learnings, and Ada-powered projects!
+Welcome to my first Ada program! 🚀 This repository contains a simple "Hello World" example written in Ada as I start learning this powerful and unique language.
