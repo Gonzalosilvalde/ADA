@@ -1,22 +1,21 @@
-# ADA
 ## 🌟 Ada Adventures 🌟
 
-Welcome! Here I'll be uploading my Ada code as I dive into this awesome, structured language. 🖥️✨ Follow along to see my experiments, learnings, and Ada-powered projects!
+Welcome back! This branch documents my learning process around functions, procedures, and output formatting in Ada. I’ve explored the core differences between functions and procedures, learned how to control Ada’s default output formatting, and continued my journey with the basics of Ada programming. Dive in and follow along as I expand my Ada toolkit! 🖥️✨
 
-## 🌟 Why Ada?
+## 🌟 What’s New Here?
+Functions and Procedures
+In Ada, functions and procedures help break code into modular, reusable pieces:
 
-Ada is a fascinating language known for its robustness and reliability, commonly used in critical systems like aerospace and defense. Learning Ada is a great way to understand a structured, strongly-typed language that emphasizes safe and efficient programming practices.
+Functions return a single value and can be used within expressions, making them ideal for calculations or operations that yield a specific result.
+Procedures execute actions without returning a value, making them suitable for tasks like displaying output or modifying variables by reference.
+## Output Formatting with `Put` and `Integer'Image`
+As I implemented these functions and procedures, I also explored ways to control output alignment with `Put` and `Integer'Image`. By default, Ada aligns numbers in the output, which can add unnecessary spaces. To manage this, I learned a few strategies:
 
-## 📂 Branches
+- Using `Put` with a width of 0: Setting the width to 0 in `Put` prevents extra spaces in numeric output, simplifying the display.
+- Trimming `Integer'Image`: Ada’s `Integer'Image` function also adds spaces for alignment. Using `'Trim` removes these, allowing for cleaner, more compact output.
 
-- [Hello-World](https://github.com/Gonzalosilvalde/ADA/tree/Hola_mundo): A branch with hello world code!
+Reference:
+For more details on Put and Ada's output alignment features, check out the [Put](https://docs.adacore.com/live/wave/arm22/html/arm22/arm22-A-10.html) 
+and the [Integer'Image](https://docs.adacore.com/live/wave/arm22/html/arm22/arm22-4-10.html) where these output features and formatting options are discussed.
 
-## 📚 Where I Learn
-
-I'm currently exploring Ada through various resources, including:
-
-- **AdaCore Learn**: A great platform for getting started with Ada programming. [Explore here](https://learn.adacore.com/).
-- **AdaCore Documentation**: Comprehensive documentation on Ada and its features. [Check it out](https://www.adacore.com/documentation#all).
-
-Feel free to check these out if you're interested in learning Ada too! 🌍
 
