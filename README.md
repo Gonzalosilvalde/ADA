@@ -10,6 +10,8 @@ Ada is a fascinating language known for its robustness and reliability, commonly
 ## 📂 Branches
 
 - [Hello-World](https://github.com/Gonzalosilvalde/ADA/tree/Hola_mundo): A branch with hello world code!
+- [Functions](https://github.com/Gonzalosilvalde/ADA/tree/Functions): In this branch, I explored defining functions and procedures in Ada.
+
 
 ## 📚 Where I Learn
 
