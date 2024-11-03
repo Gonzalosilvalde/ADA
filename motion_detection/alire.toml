@@ -1,0 +1,12 @@
+name = "motion_detection"
+description = ""
+version = "0.1.0-dev"
+
+authors = ["Gonzalo"]
+maintainers = ["Gonzalo <gonzalo.silvalde@gmail.com>"]
+maintainers-logins = ["gonzaloSilvalde"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = ""
+tags = []
+
+executables = ["motion_detection"]
