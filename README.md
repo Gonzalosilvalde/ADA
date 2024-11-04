@@ -1,24 +1,20 @@
 # ADA
-## 🌟 Ada Adventures 🌟
 
-Welcome! Here I'll be uploading my Ada code as I dive into this awesome, structured language. 🖥️✨ Follow along to see my experiments, learnings, and Ada-powered projects!
+## 🚶 Motion Detection System in Ada with OpenCV 🚶
+Welcome to my motion detection project in Ada, which uses OpenCV for image processing and detecting changes in a video feed. This project simulates a basic surveillance system where detected motion is saved in a video file. I've applied Ada's concurrency features and built a C++ wrapper to interact with OpenCV, allowing me to learn and experiment with shared resource management and task synchronization in Ada.
 
-## 🌟 Why Ada?
+## 🔍 Project Overview
+This system detects real-time movement using a camera. Whenever motion is detected, it saves the frame in a video file. Several concurrent tasks are used to ensure parallel detection and storage, preventing system overload.
 
-Ada is a fascinating language known for its robustness and reliability, commonly used in critical systems like aerospace and defense. Learning Ada is a great way to understand a structured, strongly-typed language that emphasizes safe and efficient programming practices.
+## 💡 What I Learned in This Project
+Concurrency and Tasks in Ada
+In this project, Ada allows the execution of parallel tasks for capturing frames and storing those with detected motion. The Save_Motion task runs concurrently to save frames, maintaining system efficiency. Learning to coordinate these tasks in Ada was key to managing real-time systems.
 
-## 📂 Branches
+### OpenCV Wrapper in C++ for Ada
+To connect Ada with OpenCV, I implemented a C++ wrapper that handles detector creation, frame capture, and processing operations. Each function in the C++ wrapper is exposed to Ada through pragma Import. This process taught me how to manage interoperability between Ada and C++ for complex applications.
 
-- [Hello-World](https://github.com/Gonzalosilvalde/ADA/tree/Hola_mundo): A branch with hello world code!
-- [Functions](https://github.com/Gonzalosilvalde/ADA/tree/Functions): In this branch, I explored defining functions and procedures in Ada.
-- [Recursion](https://github.com/Gonzalosilvalde/ADA/tree/recursion): In this branch, I explored the concept of recursion by implementing a recursive function to calculate Fibonacci numbers.
+### Shared Resource Management and Synchronization
+Ada’s concurrency features facilitated safe access to OpenCV resources. In particular, synchronizing frame capture and storage was a practical exercise in controlling shared resources.
 
-## 📚 Where I Learn
-
-I'm currently exploring Ada through various resources, including:
-
-- **AdaCore Learn**: A great platform for getting started with Ada programming. [Explore here](https://learn.adacore.com/).
-- **AdaCore Documentation**: Comprehensive documentation on Ada and its features. [Check it out](https://www.adacore.com/documentation#all).
-
-Feel free to check these out if you're interested in learning Ada too! 🌍
-
+### Timing Control and Real-Time Simulation
+I used delay statements to add small pauses between capturing and saving frames, managing CPU usage. This aspect was essential to make the simulation reflect a more realistic surveillance system.
