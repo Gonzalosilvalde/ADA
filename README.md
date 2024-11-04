@@ -12,6 +12,9 @@ Ada is a fascinating language known for its robustness and reliability, commonly
 - [Hello-World](https://github.com/Gonzalosilvalde/ADA/tree/Hola_mundo): A branch with hello world code!
 - [Functions](https://github.com/Gonzalosilvalde/ADA/tree/Functions): In this branch, I explored defining functions and procedures in Ada.
 - [Recursion](https://github.com/Gonzalosilvalde/ADA/tree/recursion): In this branch, I explored the concept of recursion by implementing a recursive function to calculate Fibonacci numbers.
+- [Motion Detection](https://github.com/Gonzalosilvalde/ADA/tree/motion-detection-project): This Ada project implements a motion detection system using OpenCV and a C++ wrapper to analyze video frames in real-time. It captures frames, processes them for motion detection, and saves frames with detected movement, showcasing Ada's concurrency features and image processing capabilities.
+- [Alire](https://github.com/Gonzalosilvalde/ADA/tree/alire): Small project to test Alire.
+
 
 ## 📚 Where I Learn
 
