@@ -3,23 +3,15 @@ with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
 procedure Fibonacci is
 
-   -- Iterative function to calculate the n-th Fibonacci number
+   -- Recursive function to calculate the n-th Fibonacci number
    function Fibonacci(N : Integer) return Integer is
-      A : Integer := 0;  -- F(0)
-      B : Integer := 1;  -- F(1)
-      Temp : Integer;
    begin
       if N = 0 then
-         return A;  -- Return F(0)
+         return 0;  -- Return F(0)
       elsif N = 1 then
-         return B;  -- Return F(1)
+         return 1;  -- Return F(1)
       else
-         for I in 2 .. N loop
-            Temp := A + B;  -- Calculate the next Fibonacci number
-            A := B;         -- Shift for next iteration
-            B := Temp;      -- Update B to the latest Fibonacci number
-         end loop;
-         return B;  -- Return F(N)
+         return Fibonacci(N - 1) + Fibonacci(N - 2);  -- Recursive call
       end if;
    end Fibonacci;
 
@@ -33,4 +25,3 @@ begin
    -- Calculate and display the result
    Put_Line("The " & Integer'Image(N) & " Fibonacci number is: " & Integer'Image(Fibonacci(N)));
 end Fibonacci;
-
